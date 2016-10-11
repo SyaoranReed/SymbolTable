@@ -15,6 +15,26 @@ import java.util.LinkedList;
  */
 public class ST<K extends Comparable<K>,V> implements SymbolTable<K,V> {
 
+    private LinkedList<Node<K,V>> pairList;
+    
+    private class Node<K,V> {
+        private K key;
+        private V value;
+        
+        public Node(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        public K getKey() {
+            return key;
+        }
+
+        public V getValue() {
+            return value;
+        }        
+    }
+    
     @Override
     public void put(K key, V val)
     {
