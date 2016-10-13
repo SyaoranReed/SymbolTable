@@ -1,5 +1,6 @@
 
 import java.util.LinkedList;
+import jdk.nashorn.internal.runtime.ListAdapter;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -137,4 +138,11 @@ public class ST<K extends Comparable<K>,V> implements SymbolTable<K,V> {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    private void ordenar()
+    {
+        int tamanio = this.pairList.size();
+        for(int i = tamanio-1; i >= 0; i--){
+            
+        }
+    }
 }
